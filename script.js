@@ -120,30 +120,3 @@ document.getElementById('musicToggle').addEventListener('click', () => {
     document.getElementById('musicToggle').classList.toggle('playing', isPlaying);
 });
 
-// ---- RSVP WhatsApp ----
-function buildMessage() {
-    const name = document.getElementById('guestName').value.trim();
-    const num = document.getElementById('numGuests').value;
-    const att = document.getElementById('attendance').value;
-    const msg = document.getElementById('message').value.trim();
-
-    if (!name || !num || !att) {
-        alert('Por favor llena todos los campos requeridos.');
-        return null;
-    }
-
-    let text = `*XV Años de Kim — Kimberli Sarahi Perez*\n\n`;
-    text += `*Nombre:* ${name}\n`;
-    text += `*Invitados:* ${num}\n`;
-    text += `*Asistencia:* ${att === 'si' ? 'Confirmo mi asistencia' : 'No podré asistir'}\n`;
-    if (msg) text += `*Mensaje:* ${msg}\n`;
-
-    return encodeURIComponent(text);
-}
-
-document.getElementById('sendConfirm').addEventListener('click', () => {
-    const msg = buildMessage();
-    if (msg) {
-        window.open(`https://wa.me/5214773808258?text=${msg}`, '_blank');
-    }
-});

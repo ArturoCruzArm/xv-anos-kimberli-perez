@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <text y=".9em" font-size="90">👑</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4889B"/>
+      <stop offset="100%" style="stop-color:#8B3A5A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#3D0C2C"/>
+  <!-- Corona -->
+  <polygon points="14,38 14,26 20,32 26,18 32,28 38,18 44,32 50,26 50,38" fill="url(#g)" opacity="0.95"/>
+  <rect x="14" y="38" width="36" height="4" rx="2" fill="url(#g)" opacity="0.95"/>
+  <!-- Texto XV -->
+  <text x="32" y="56" text-anchor="middle" font-family="serif" font-size="9" font-weight="bold" fill="#F5D0D8">XV</text>
 </svg>
