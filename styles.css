@@ -789,10 +789,327 @@ body {
 /* ============================================
    RESPONSIVE
    ============================================ */
+
+/* ---- Tablet (max 768px) ---- */
+@media (max-width: 768px) {
+    .section {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .hero-names {
+        font-size: clamp(2.8rem, 9vw, 5rem);
+    }
+
+    .section-title {
+        font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    }
+
+    .event-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .event-venue {
+        font-size: 1.4rem;
+    }
+
+    .parents-grid {
+        gap: 1.5rem;
+    }
+
+    .countdown {
+        gap: 1.2rem;
+    }
+
+    .splash-btn {
+        padding: 0.9rem 2.5rem;
+    }
+
+    .dresscode-text {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* ---- Mobile (max 600px) ---- */
 @media (max-width: 600px) {
-    .section { padding: 3rem 1.2rem; }
-    .countdown { gap: 1rem; }
-    .countdown-item { min-width: 60px; }
-    .event-card { padding: 2rem 1.2rem; }
-    .parents-grid { grid-template-columns: 1fr; }
+    .section {
+        padding: 2.5rem 1rem;
+    }
+
+    /* Splash */
+    .splash-crown {
+        font-size: 2.8rem;
+    }
+
+    .splash-names {
+        font-size: clamp(2rem, 7vw, 3.5rem);
+    }
+
+    .splash-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.3em;
+    }
+
+    .splash-date {
+        font-size: 0.85rem;
+    }
+
+    .splash-btn {
+        padding: 0.85rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .splash-divider {
+        width: 120px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-names {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    .hero-pre {
+        font-size: 0.75rem;
+        letter-spacing: 0.4em;
+    }
+
+    .hero-date {
+        font-size: 0.95rem;
+    }
+
+    .hero-location {
+        font-size: 0.8rem;
+    }
+
+    .hero-divider {
+        width: 150px;
+    }
+
+    .scroll-indicator {
+        margin-top: 2rem;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        margin-bottom: 1.5rem;
+    }
+
+    /* Invite */
+    .invite-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .ornament-line {
+        width: 60px;
+    }
+
+    /* Parents */
+    .parents-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .parent-card {
+        padding: 1.5rem;
+    }
+
+    .parent-name {
+        font-size: 1.05rem;
+    }
+
+    /* Padrinos */
+    .padrinos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .padrino-card {
+        padding: 1rem;
+    }
+
+    /* Countdown */
+    .countdown {
+        gap: 0.8rem;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+    }
+
+    .countdown-number {
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+    }
+
+    .countdown-label {
+        font-size: 0.6rem;
+    }
+
+    /* Event cards */
+    .event-card {
+        padding: 2rem 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .event-icon {
+        font-size: 2rem;
+    }
+
+    .event-venue {
+        font-size: 1.3rem;
+    }
+
+    .event-time-badge {
+        padding: 0.4rem 1.5rem;
+    }
+
+    .time {
+        font-size: 1.2rem;
+    }
+
+    .btn-map {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* Dress code */
+    .dresscode-text {
+        font-size: 1.4rem;
+    }
+
+    /* RSVP */
+    #rsvp {
+        padding: 40px 15px;
+    }
+
+    .rsvp-form {
+        padding: 20px !important;
+        border-radius: 12px !important;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer-names {
+        font-size: 1.6rem;
+    }
+
+    .footer-date {
+        font-size: 0.75rem;
+    }
+
+    /* Music toggle */
+    .music-toggle {
+        width: 44px;
+        height: 44px;
+        bottom: 1.2rem;
+        right: 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ---- Small Mobile (max 380px) ---- */
+@media (max-width: 380px) {
+    .splash-names {
+        font-size: 2rem;
+    }
+
+    .splash-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-names {
+        font-size: 2.2rem;
+    }
+
+    .countdown {
+        gap: 0.5rem;
+    }
+
+    .countdown-item {
+        min-width: 55px;
+    }
+
+    .countdown-number {
+        font-size: 1.6rem;
+    }
+
+    .event-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .event-venue {
+        font-size: 1.15rem;
+    }
+
+    .rsvp-form {
+        padding: 16px !important;
+    }
+
+    .section {
+        padding: 2rem 0.8rem;
+    }
+}
+
+/* ---- Landscape phones ---- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .splash-screen {
+        overflow-y: auto;
+    }
+
+    .splash-crown {
+        font-size: 2rem;
+    }
+
+    .splash-names {
+        font-size: 2.5rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ---- Safe touch targets ---- */
+@media (pointer: coarse) {
+    .btn-map,
+    .splash-btn,
+    button[type="submit"] {
+        min-height: 44px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        min-height: 44px;
+        font-size: 16px;
+    }
+}
+
+/* ---- Prevent zoom on iOS input focus ---- */
+@supports (-webkit-touch-callout: none) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
 }
