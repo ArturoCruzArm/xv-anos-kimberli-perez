@@ -740,6 +740,33 @@ body {
 .anime-bounce { animation: bounce 2s ease-in-out infinite; }
 
 /* ============================================
+   PHOTO BREAKS (full-width interstitial)
+   ============================================ */
+.photo-break {
+    position: relative;
+    overflow: hidden;
+}
+.photo-break img {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+.photo-break-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        var(--bg-dark) 0%,
+        transparent 12%,
+        transparent 88%,
+        var(--bg-dark) 100%
+    );
+    pointer-events: none;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 600px) {
