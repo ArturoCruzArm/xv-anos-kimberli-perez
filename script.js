@@ -38,7 +38,7 @@ function initParticles() {
         const size = (2 + Math.random() * 3) + 'px';
         p.style.width = size;
         p.style.height = size;
-        const colors = ['#D4889B', '#F5D0D8', '#C090A0', '#E8A0B0'];
+        const colors = ['#F4B4CC', '#C9A84C', '#E0CC80', '#FDE0EB', '#D8D4E8'];
         p.style.background = colors[Math.floor(Math.random() * colors.length)];
         container.appendChild(p);
     }
@@ -56,7 +56,7 @@ function initFloatingElements() {
         el.style.animationDuration = (10 + Math.random() * 12) + 's';
         el.style.animationDelay = Math.random() * 10 + 's';
         el.style.fontSize = (0.8 + Math.random() * 1) + 'rem';
-        el.style.color = Math.random() > 0.5 ? '#D4889B' : '#F5D0D8';
+        el.style.color = ['#F4B4CC', '#C9A84C', '#E0CC80', '#D8D4E8'][Math.floor(Math.random() * 4)];
         container.appendChild(el);
     }
 }
